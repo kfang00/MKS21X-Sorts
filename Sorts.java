@@ -14,7 +14,7 @@ public class Sorts {
 		ary[idx] = ary[a];
 		ary[a] = smallest;
 	    }
-	    System.out.println(ary);
+	    //System.out.println(printArray(ary));
 	}
     }
 
