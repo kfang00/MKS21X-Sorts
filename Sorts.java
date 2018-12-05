@@ -14,6 +14,7 @@ public class Sorts {
 		ary[idx] = ary[a];
 		ary[a] = smallest;
 	    }
+	    System.out.println(ary);
 	}
     }
 
@@ -81,6 +82,25 @@ public static String printArray(int[] ary) {
     } else {
       System.out.println("TEST CASE - FAIL");
     }
+    int[] test_now = { 7, 5, 4, 2};
+    System.out.println(printArray(test_now));
+    // [7, 5, 4, 2]
+
+    selectionSorts(test_now);
+
+    selectionSortsed = printArray(test_now);
+    System.out.println(selectionSortsed);
+    // [2, 4, 5, 7]
+
+    int[] test_now1 = {5, 1, 12, -5, 16, 2, 12, 14};
+    System.out.println(printArray(test_now1));
+    // [5, 1, 12, -5, 16, 2, 12, 14]
+
+    selectionSorts(test_now1);
+
+    selectionSortsed = printArray(test_now1);
+    System.out.println(selectionSortsed);
+    // [-5, 1, 2, 5, 12, 12, 14, 16]
 
   }
 
