@@ -74,7 +74,7 @@ public static String printArray(int[] ary) {
     selectionSort(test_c);
 
     selectionSorted = printArray(test_c);
-    System.out.println(selectionSortsed);
+    System.out.println(selectionSorted);
     // [1, 9, 14, 15, 19, 30, 32, 33, 35, 37, 48, 50, 52, 57, 61, 65, 66, 85, 96, 100]
 
     if(selectionSorted.equals("[1, 9, 14, 15, 19, 30, 32, 33, 35, 37, 48, 50, 52, 57, 61, 65, 66, 85, 96, 100]")) {
@@ -86,20 +86,20 @@ public static String printArray(int[] ary) {
     System.out.println(printArray(test_now));
     // [7, 5, 4, 2]
 
-    selectionSorts(test_now);
+    selectionSort(test_now);
 
-    selectionSortsed = printArray(test_now);
-    System.out.println(selectionSortsed);
+    selectionSorted = printArray(test_now);
+    System.out.println(selectionSorted);
     // [2, 4, 5, 7]
 
     int[] test_now1 = {5, 1, 12, -5, 16, 2, 12, 14};
     System.out.println(printArray(test_now1));
     // [5, 1, 12, -5, 16, 2, 12, 14]
 
-    selectionSorts(test_now1);
+    selectionSort(test_now1);
 
-    selectionSortsed = printArray(test_now1);
-    System.out.println(selectionSortsed);
+    selectionSorted = printArray(test_now1);
+    System.out.println(selectionSorted);
     // [-5, 1, 2, 5, 12, 12, 14, 16]
 
   }
