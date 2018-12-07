@@ -1,5 +1,5 @@
 public class Sorts {
-    public static void selectionSort(int [] ary) { 
+    public static void selectionSort(int [] ary) {
 	int smallest = 0;
 	int idx = 0;
 	for (int a = 0; a < ary.length; a++) {
@@ -16,6 +16,10 @@ public class Sorts {
 	    }
 	    //System.out.println(printArray(ary));
 	}
+    }
+
+    public static void bubbleSort() {
+      
     }
 
 public static String printArray(int[] ary) {
