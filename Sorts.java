@@ -21,15 +21,23 @@ public class Sorts {
     public static void bubbleSort() {
         int countSwaps = 0;
 	int hold  = 0;
-	for (int a = 0; (a + 1) < ary.length; a++) {
-	    if (ary[a] > ary[a + 1]) {
-		hold = ary[a]; 
-		ary[a] = ary[a + 1];
-		ary[a + 1] = hold;
-		countSwaps += 1;
+	boolean allGood = false;
+	while (allGood == false) {
+	    countSwaps = 0;
+	    for (int a = 0; (a + 1) < ary.length; a++) {
+	        if (ary[a] > ary[a + 1]) {
+		    hold = ary[a]; 
+		    ary[a] = ary[a + 1];
+		    ary[a + 1] = hold;
+		    countSwaps += 1;
+		]
+	    }
+	    if (countSwaps == 0) {
+		allGood = true;
 	    }
 	    //System.out.println(printArray(ary));
 	}
+	
     }
 
 public static String printArray(int[] ary) {
