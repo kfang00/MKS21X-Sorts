@@ -40,6 +40,10 @@ public class Sorts {
 	
     }
 
+    public static void insertionSort(int[] ary) {
+
+    }
+
 public static String printArray(int[] ary) {
     String output = "[";
     for(int i=0; i<ary.length-1; i++) {
