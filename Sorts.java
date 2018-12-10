@@ -18,9 +18,9 @@ public class Sorts {
 	}
     }
 
-    public static void bubbleSort() {
+    public static void bubbleSort(int[] ary) {
         int countSwaps = 0;
-	int hold  = 0;
+	int hold = 0;
 	boolean allGood = false;
 	while (allGood == false) {
 	    countSwaps = 0;
@@ -30,12 +30,12 @@ public class Sorts {
 		    ary[a] = ary[a + 1];
 		    ary[a + 1] = hold;
 		    countSwaps += 1;
-		]
+		}
+		//System.out.println(printArray(ary));
 	    }
 	    if (countSwaps == 0) {
 		allGood = true;
 	    }
-	    //System.out.println(printArray(ary));
 	}
 	
     }
@@ -53,6 +53,7 @@ public static String printArray(int[] ary) {
     // Google random int generator
 
     String selectionSorted = "";
+    String bubbleSorted = "";
 
     // 8 nums, [0:10]
     int[] test_a = { 3, 4, 7, 1, 6, 2, 8, 6 };
@@ -124,6 +125,35 @@ public static String printArray(int[] ary) {
     System.out.println(selectionSorted);
     // [-5, 1, 2, 5, 12, 12, 14, 16]
 
+    int[] test_bub = {5, 1, 12, -5, 16};
+    System.out.println(printArray(test_bub));
+    // [5, 1, 12, -5, 16]
+
+    bubbleSort(test_bub);
+
+    bubbleSorted = printArray(test_bub);
+    System.out.println(bubbleSorted);
+    // [-5, 1, 5, 12, 16]
+
+    int[] test_bub1 = {2, 3, 4, 5, 1};
+    System.out.println(printArray(test_bub1));
+    // [2, 3, 4, 5, 1]
+
+    bubbleSort(test_bub1);
+
+    bubbleSorted = printArray(test_bub1);
+    System.out.println(bubbleSorted);
+    // [1, 2, 3, 4, 5]
+
+    int[] test_bub2 = {6, 1, 2, 3, 4, 5};
+    System.out.println(printArray(test_bub2));
+    // [6, 1, 2, 3, 4, 5]
+
+    bubbleSort(test_bub2);
+
+    bubbleSorted = printArray(test_bub2);
+    System.out.println(bubbleSorted);
+    // [1, 2, 3, 4, 5, 6]
   }
 
 }
