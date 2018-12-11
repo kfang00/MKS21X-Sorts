@@ -46,10 +46,16 @@ public class Sorts {
 	    hold = ary[a];
 	    for (int b = (a - 1); b != 0; b--) {
 	        if (hold > ary[b]) {
-		    hold = ary[b]; 
+		    ary[b] = hold; 
+		    hold = ary[a] - 1;
 		}
-		ary[b] = ary[b + 1];
-		//System.out.println(printArray(ary));
+		else {
+		    ary[b] = ary[b + 1];
+		}
+		
+	    }
+	    if (hold != ary[a]) {
+		ary[0] = ary[a];
 	    }
 	}
     }
