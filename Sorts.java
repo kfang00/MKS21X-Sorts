@@ -41,7 +41,17 @@ public class Sorts {
     }
 
     public static void insertionSort(int[] ary) {
-
+	int hold = 0;
+	for (int a = 1; a < ary.length; a++) {
+	    hold = ary[a];
+	    for (int b = (a - 1); b != 0; b--) {
+	        if (hold > ary[b]) {
+		    hold = ary[b]; 
+		}
+		ary[b] = ary[b + 1];
+		//System.out.println(printArray(ary));
+	    }
+	}
     }
 
 public static String printArray(int[] ary) {
