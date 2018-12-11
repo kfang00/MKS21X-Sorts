@@ -42,21 +42,15 @@ public class Sorts {
 
     public static void insertionSort(int[] ary) {
 	int hold = 0;
+	int idx = 0;
 	for (int a = 1; a < ary.length; a++) {
 	    hold = ary[a];
-	    for (int b = (a - 1); b != 0; b--) {
-	        if (hold > ary[b]) {
-		    ary[b] = hold; 
-		    hold = ary[a] - 1;
-		}
-		else {
-		    ary[b] = ary[b + 1];
-		}
-		
+	    idx = a - 1;
+	    while ((hold < ary[idx]) && (idx < 0)) {
+		    ary[idx + 1] = ary[idx]; 
+		    idx = idx - 1;
 	    }
-	    if (hold != ary[a]) {
-		ary[0] = ary[a];
-	    }
+	    ary[idx] = hold;	
 	}
     }
 
