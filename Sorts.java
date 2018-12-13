@@ -47,13 +47,13 @@ public class Sorts {
 	for (int a = 1; a < ary.length; a++) {
 	    hold = ary[a];
 	    idx = a - 1;
-	    while ((hold < ary[idx]) && (idx > 0)) {
+	    while ((idx >= 0) && (hold < ary[idx])) {
 		    hold1 = ary[idx];
 		    ary[idx + 1] = hold1; 
 		    idx = idx - 1;
 	    }
 	    ary[idx + 1] = hold;	
-	    System.out.println(printArray(ary));
+	    //System.out.println(printArray(ary));
 	}
     }
 
